@@ -5,13 +5,19 @@ Also added input validation.<br/>
 The project was developed in Java!<br/>
 You have 2 options how to start the project:<br/>
 First option:<br/>
+1 - Download all files from https://github.com/ASergijenko/PokerHandStrengthEvaluator, press code -> download ZIP<br/>
+2 - Unpack zip archive in a folder. <br/>
+3 - !IMPORTANT if you don't have installed java on your machine run prepare.sh to install it<br/>
+4 - Run Run.sh to start the application!<br/>
+<br/>
+Second option:<br/>
 1 - In main directory of github (https://github.com/ASergijenko/PokerHandStrengthEvaluator), you can find PokerHandStrengthEvaluator.jar.<br/>
 2 - To run this file you should have installed Java on your System. <br/>
 3 - If you don't have it, you can download and install Java from https://java.com/en/download/<br/>
 4 - Then download PokerHandStrengthEvaluator.jar from https://github.com/ASergijenko/PokerHandStrengthEvaluator<br/>
 5 - Open terminal on ubuntu and write java -jar (path to file)/PokerHandStrengthEvaluator.jar and press enter. The programm should be started.<br/>
 <br/>
-Second option:<br/>
+Third option:<br/>
 1 - You can pull the project from github in your IDE https://github.com/ASergijenko/PokerHandStrengthEvaluator.git<br/>
 2 - You should have installed Java https://java.com/en/download/<br/>
 3 - I reccomend to use IntelliJ IDEA as IDE. You can download and install it from https://www.jetbrains.com/idea/download<br/>
