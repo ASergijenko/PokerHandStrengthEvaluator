@@ -211,7 +211,7 @@ public class SortingAlgorithm {
 
                 int pairCounter;
 
-                for (int i = 0; i < 15; i++) {
+                for (int i = 14; i > 0; i--) {
                     pairCounter = 0;
                     for (Card card : handAllCards) {
                         if (card.getValue() == i) {
@@ -224,6 +224,9 @@ public class SortingAlgorithm {
                         if (pairCounter == 2) {
                             secondCardOfTwoPairs = i;
                         }
+                    }
+                    if (firstCardOfTwoPairs != 0 && secondCardOfTwoPairs != 0) {
+                        break;
                     }
                 }
 
@@ -369,7 +372,7 @@ public class SortingAlgorithm {
             sortedHands.put(sortingStructure1.getHand(), sortingStructure1.getPriorityNumber());
 
             //test
-            //System.out.println(sortingStructure1.toString());
+            System.out.println(sortingStructure1.toString());
         }
 
         return sortedHands;

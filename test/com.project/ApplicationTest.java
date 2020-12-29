@@ -405,6 +405,18 @@ public class ApplicationTest {
         assertEquals("9h7h 2dTc KcAs 7sJd TsJc Qh8c 5c4h", texas.calculate(("3d4s5dJsQd 5c4h 7sJd KcAs 9h7h 2dTc Qh8c TsJc")));
     }
 
+    @Test
+    public void fix1() {
+        Application.typeOfPoker = "texas-holdem";
+        assertEquals("Ac5d=As4c", texas.calculate("5s8cAhThTs As4c Ac5d"));
+    }
+
+    @Test
+    public void fix1reverse() {
+        Application.typeOfPoker = "texas-holdem";
+        assertEquals("Ac5d=As4c", texas.calculate("5s8cAhThTs Ac5d As4c"));
+    }
+
         @Test public void testOmaha2(){ Application.typeOfPoker = "omaha-holdem";assertEquals("2c2d3c3d 4c4d5c5d 6c6d7c7h", omaha.calculate(("7s7dKsKhQs 2c2d3c3d 4c4d5c5d 6c6d7c7h"))); }
         @Test public void testOmaha3(){ Application.typeOfPoker = "omaha-holdem";assertEquals("Qc8dAd6c KsAsTcTs Js2dKd8c 7dQsAc5d Jh2h3c9c", omaha.calculate(("3d3s4d6hJc Js2dKd8c KsAsTcTs Jh2h3c9c Qc8dAd6c 7dQsAc5d")));}
         @Test public void testOmaha4(){ Application.typeOfPoker = "omaha-holdem";assertEquals("4d3h2hQh 4c8s9d5d", omaha.calculate(("QdTd3sJcTs 4d3h2hQh 4c8s9d5d")));}
@@ -439,7 +451,6 @@ public class ApplicationTest {
         @Test public void testOmaha33(){ Application.typeOfPoker = "omaha-holdem";assertEquals("8d7cTcJd 6h7d2cJc Qd3cKs4c Kh4hKc7h KdJs2hAh 5s5d7s4d TsQh9hQc", omaha.calculate(("5c6dAcAsQs TsQh9hQc 8d7cTcJd 5s5d7s4d Qd3cKs4c KdJs2hAh Kh4hKc7h 6h7d2cJc")));}
         @Test public void testOmaha34(){ Application.typeOfPoker = "omaha-holdem";assertEquals("9h7h2dTc 7cThKs5s 7sJdKcAs 8d9s5c4h 5hJh2s7d Qh8cTsJc 8s2h6s8h", omaha.calculate(("3d4s5dJsQd 8s2h6s8h 7cThKs5s 5hJh2s7d 8d9s5c4h 7sJdKcAs 9h7h2dTc Qh8cTsJc")));}
         @Test public void testOmaha35(){ Application.typeOfPoker = "omaha-holdem";assertEquals("Qc8dAd6c KsAsTcTs Js2dKd8c 7dQsAc5d Jh2h3c9c", omaha.calculate(("3d3s4d6hJc Js2dKd8c KsAsTcTs Jh2h3c9c Qc8dAd6c 7dQsAc5d")));}
-
 
         @Test public void testFiveCardDraw1(){ Application.typeOfPoker = "five-card-draw"; assertEquals("4c8h2h6c9c Ah9d6s2cKh Kd9sAs3cQs 7h4s4h8c9h Tc5h6dAc5c", fiveCardDraw.calculate(("7h4s4h8c9h Tc5h6dAc5c Kd9sAs3cQs Ah9d6s2cKh 4c8h2h6c9c")));}
         @Test public void testFiveCardDraw2(){ Application.typeOfPoker = "five-card-draw"; assertEquals("4s5hTsQh9h Qc8d7cTcJd 5s5d7s4dQd 7h6h7d2cJc 3cKs4cKdJs 2hAhKh4hKc As6d5cQsAc", fiveCardDraw.calculate(("4s5hTsQh9h Qc8d7cTcJd 5s5d7s4dQd 3cKs4cKdJs 2hAhKh4hKc 7h6h7d2cJc As6d5cQsAc")));}
